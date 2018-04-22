@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "androidproject.pna.com.pnaandroid"
+        applicationId "com.example.an.pnaandroid"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
@@ -26,33 +26,22 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
-    compile 'com.squareup.okhttp3:mockwebserver:3.9.1'
-
-    compile 'com.github.bumptech.glide:glide:4.3.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
-
-    compile 'com.google.code.gson:gson:2.7'
-
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-
-    compile 'com.google.firebase:firebase-messaging:10.2.1'
-
-    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
-
-    compile 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
-
-    compile ('io.socket:socket.io-client:1.0.0') {
-        exclude group: 'org.json', module: 'json'
-    }
-    compile ('com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3@aar'){
-        transitive = true
-    }
-
-    compile 'com.amitshekhar.android:rx2-android-networking:1.0.0'
-
-
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.0'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'com.snappydb:snappydb-lib:0.5.2'
+    implementation 'com.esotericsoftware.kryo:kryo:2.24.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-plus:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-places:11.8.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+    implementation 'com.bogdwellers:pinchtozoom:0.1'
+    implementation 'com.tune:tune-marketing-console-sdk:5.1.1'
+    implementation 'com.google.android.gms:play-services-gcm:11.8.0'
+    implementation 'joda-time:joda-time:2.9.9'
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
 }
