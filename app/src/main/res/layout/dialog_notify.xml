@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_xxxxlarge"
+        android:layout_marginStart="@dimen/padding_xxxxlarge"
+        android:background="@color/white"
+        android:padding="@dimen/padding_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.an.pnaandroid.library.uicustom.CustomTextView
+            android:id="@+id/txt_title_dialog_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginTop="@dimen/padding_xxlarge"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/main_layout"
+            app:layout_constraintStart_toStartOf="@+id/main_layout"
+            app:layout_constraintTop_toTopOf="@+id/main_layout" />
+
+        <com.example.an.pnaandroid.library.uicustom.CustomTextView
+            android:id="@+id/txt_message_dialog_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/main_layout"
+            app:layout_constraintStart_toStartOf="@+id/main_layout"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_dialog_notify" />
+
+        <com.example.an.pnaandroid.library.uicustom.CustomButton
+            android:id="@+id/btn_yes_dialog_notify"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="@dimen/padding_xxxlarge"
+            android:text="@string/ok"
+            app:buttonColor="@color/colorAccent"
+            app:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/main_layout"
+            app:layout_constraintStart_toStartOf="@+id/main_layout"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message_dialog_notify"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

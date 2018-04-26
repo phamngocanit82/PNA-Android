@@ -2,10 +2,10 @@ package com.example.an.pnaandroid.presenter.base;
 
 import android.support.annotation.NonNull;
 
+import com.androidnetworking.error.ANError;
 import com.example.an.pnaandroid.model.APIResponse;
-import com.example.an.pnaandroid.view.base.BaseView;
 
-public interface BasePresenterImplement<V extends BaseView> {
+public interface BasePresenterImplement<V extends BaseViewPresenterImplement> {
     void onAttach(V baseView);
 
     void onDetach();
