@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.bogdwellers:pinchtozoom-0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/cdfe21124bb96ea1abb35cd43354d465/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/cdfe21124bb96ea1abb35cd43354d465/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/b0a59000a5fb0860f6d274c40bedde1c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/b0a59000a5fb0860f6d274c40bedde1c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
