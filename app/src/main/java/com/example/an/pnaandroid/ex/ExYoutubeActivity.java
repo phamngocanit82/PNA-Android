@@ -24,7 +24,8 @@ public class ExYoutubeActivity extends YouTubeBaseActivity implements  YouTubePl
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-        youTubePlayer.cueVideo("2a6egcYBnV0");
+        youTubePlayer.cueVideo("hKOLILJYArw");
+        youTubePlayer.play();
     }
 
     @Override

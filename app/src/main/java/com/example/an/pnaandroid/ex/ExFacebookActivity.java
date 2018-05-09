@@ -45,7 +45,7 @@ public class ExFacebookActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         PackageInfo packageInfo = null;
         try {
-            packageInfo = getPackageManager().getPackageInfo("com.example.ngocanpham.pnaandroid", PackageManager.GET_SIGNATURES);
+            packageInfo = getPackageManager().getPackageInfo("com.example.an.pnaandroid", PackageManager.GET_SIGNATURES);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
@@ -108,7 +108,9 @@ public class ExFacebookActivity extends AppCompatActivity {
                     public void onCompleted(JSONObject object, GraphResponse response) {
                         try {
                             txtName.setText(object.getString("name"));
-                            profilePictureView.setProfileId(Profile.getCurrentProfile().getId());
+                            if (Profile.getCurrentProfile() != null) {
+                                profilePictureView.setProfileId(Profile.getCurrentProfile().getId());
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

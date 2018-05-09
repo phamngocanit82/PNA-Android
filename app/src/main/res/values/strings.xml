@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">PNAAndroid</string>
+    <string name="facebook_app_id">1659684200720628</string>
+    <string name="fb_login_protocol_scheme">fb1659684200720628</string>
+
+
     <string name="prefix_reset_pw">/mcf/user/</string>
     <string name="prefix_active_drinker">/mcf/drinker/</string>
     <string name="prefix_active_maker">/mcf/maker/</string>
